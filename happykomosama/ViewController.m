@@ -5,10 +5,10 @@
 //  Created by ohta tomotaka on 2014/05/05.
 //  Copyright (c) 2014年 ohta tomotaka. All rights reserved.
 //
-
+#import "UIImageView+WebCache.h"
 #import "ViewController.h"
 #include <AVFoundation/AVFoundation.h>
-
+#import "SuViewController.h"
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic) BOOL cellColor;
 @property (nonatomic, retain) AVAudioPlayer *player;
@@ -90,6 +90,7 @@
     
     [receivedData writeToFile:filePath atomically:YES];
     //[connection release];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     NSLog(@"Succeeded! Received %d bytes of data",[receivedData length]);
     [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(sample:) userInfo:nil repeats:NO];
     
@@ -158,19 +159,27 @@
     
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
     NSLog(@"index %d",indexPath.row);
+    
+    
     NSLog(@"index %@",[self imagepath:indexPath.row]);
     NSString *test = [self imagepath:indexPath.row];
     NSLog(@"finish insert test");
+    
     if ( [test isEqual:[NSNull null]] ){
         NSLog(@"空です");
         test=@"MacBook_005.png";
     }
     NSLog(@"no null");
-    NSString *URLString =test;
-	NSURL *url = [NSURL URLWithString:URLString];
-	NSData *data = [NSData dataWithContentsOfURL:url];
-	UIImage *image = [[UIImage alloc] initWithData:data];
-    imageView.image = image;
+//    NSString *URLString =test;
+//	NSURL *url = [NSURL URLWithString:URLString];
+//	NSData *data = [NSData dataWithContentsOfURL:url];
+//	UIImage *image = [[UIImage alloc] initWithData:data];
+//    imageView.image = image;
+    
+    NSURL *imageURL = [NSURL URLWithString:test];
+    UIImage *placeholderImage = [UIImage imageNamed:@"画像読み込み完了までに表示するリソース画像"];
+    [imageView setImageWithURL:imageURL
+               placeholderImage:placeholderImage];
     
     UILabel *label = (UILabel *)[cell viewWithTag:2];
     label.text = [NSString stringWithFormat:[self name:indexPath.row]];
@@ -178,6 +187,10 @@
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath  {
+    SuViewController *ViewController2 = [self.storyboard instantiateViewControllerWithIdentifier:@"sub"];
+    [self presentViewController:ViewController2 animated:YES completion:nil];
+    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     NSLog(@"select %d",indexPath.row);
     int sec = indexPath.row;
     NSURL *theURL = [NSURL URLWithString:[self url:sec]];

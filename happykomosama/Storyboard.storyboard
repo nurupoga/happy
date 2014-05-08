@@ -49,7 +49,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mes-Pj-JJa">
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mes-Pj-JJa">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
@@ -81,11 +81,81 @@
             </objects>
             <point key="canvasLocation" x="81" y="-162"/>
         </scene>
+        <!--Su View Controller-->
+        <scene sceneID="r1Y-pc-d0D">
+            <objects>
+                <viewController restorationIdentifier="sub" storyboardIdentifier="sub" id="9Cw-7U-xA0" customClass="SuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XFX-4h-vlg"/>
+                        <viewControllerLayoutGuide type="bottom" id="xE3-dL-0xa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rki-cp-4MV">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="DAw-iU-V2i">
+                                <rect key="frame" x="0.0" y="198" width="768" height="826"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_slidebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="LBe-Pg-Wz1">
+                                <rect key="frame" x="0.0" y="198" width="768" height="826"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_header.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cmu-lJ-r9w">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_headertag.png" translatesAutoresizingMaskIntoConstraints="NO" id="f22-K4-laU">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="komosama_slide_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="HBe-OW-CEk">
+                                <rect key="frame" x="97" y="208" width="574" height="683"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07y-XP-Cdp">
+                                <rect key="frame" x="97" y="257" width="574" height="427"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LiT.inc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vi-eO-Q1z">
+                                <rect key="frame" x="245" y="769" width="375" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="komosama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy4-Xa-iPh">
+                                <rect key="frame" x="245" y="713" width="375" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESo-fj-ofY">
+                                <rect key="frame" x="319" y="862" width="131" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="komosama_callicon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="grouplabel" destination="0Vi-eO-Q1z" id="jpg-I8-EIM"/>
+                        <outlet property="namelabel" destination="jy4-Xa-iPh" id="1Xc-F4-ppO"/>
+                        <outlet property="topimage" destination="07y-XP-Cdp" id="MAO-cO-Nos"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLb-Yw-Tpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="-162"/>
+        </scene>
     </scenes>
     <resources>
         <image name="komosama_bg.png" width="1536" height="2048"/>
+        <image name="komosama_callicon.png" width="250" height="207"/>
         <image name="komosama_header.png" width="1536" height="280"/>
         <image name="komosama_headertag.png" width="1229" height="190"/>
+        <image name="komosama_slide_photo.png" width="1094" height="1106"/>
         <image name="komosama_slidebg.png" width="1414" height="1638"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

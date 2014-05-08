@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>DBB967E9-494B-414B-88B1-00A5D77AA1AD</string>
+	<string>8017F68E-4696-4D6F-956B-036E43965670</string>
 	<key>IDESourceControlProjectName</key>
 	<string>happykomosama</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -19,6 +19,8 @@
 	<dict>
 		<key>82690241-B9AA-4809-A9C3-4E08D3F4B13D</key>
 		<string>../..</string>
+		<key>D04959BE-13D5-4EC8-B019-85B3480129D4</key>
+		<string>../../happykomosama/Vendors/libwebp</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/nurupoga/happy.git</string>
@@ -35,6 +37,14 @@
 			<string>82690241-B9AA-4809-A9C3-4E08D3F4B13D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>happykomosama</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D04959BE-13D5-4EC8-B019-85B3480129D4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libwebp</string>
 		</dict>
 	</array>
 </dict>
