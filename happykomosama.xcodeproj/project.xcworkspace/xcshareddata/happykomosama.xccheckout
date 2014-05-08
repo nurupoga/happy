@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DBB967E9-494B-414B-88B1-00A5D77AA1AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>happykomosama</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>82690241-B9AA-4809-A9C3-4E08D3F4B13D</key>
+		<string>https://github.com/nurupoga/happy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>happykomosama.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>82690241-B9AA-4809-A9C3-4E08D3F4B13D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nurupoga/happy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>82690241-B9AA-4809-A9C3-4E08D3F4B13D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82690241-B9AA-4809-A9C3-4E08D3F4B13D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>happykomosama</string>
+		</dict>
+	</array>
+</dict>
+</plist>

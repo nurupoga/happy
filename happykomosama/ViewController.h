@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController{
-        IBOutlet UITableView *table;
+@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>{
+IBOutlet UICollectionView *collectionView;
 }
 
 @end

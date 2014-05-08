@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7395B5E191A1D1E006AAB03 /* komosama_header.png in Resources */ = {isa = PBXBuildFile; fileRef = C7395B5C191A1D1E006AAB03 /* komosama_header.png */; };
+		C7395B5F191A1D1E006AAB03 /* komosama_headertag.png in Resources */ = {isa = PBXBuildFile; fileRef = C7395B5D191A1D1E006AAB03 /* komosama_headertag.png */; };
+		C7395B61191A1DAA006AAB03 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7395B60191A1DAA006AAB03 /* Storyboard.storyboard */; };
+		C7395B63191A1E5C006AAB03 /* komosama_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C7395B62191A1E5C006AAB03 /* komosama_bg.png */; };
+		C7395B65191A1EA8006AAB03 /* komosama_slidebg.png in Resources */ = {isa = PBXBuildFile; fileRef = C7395B64191A1EA8006AAB03 /* komosama_slidebg.png */; };
+		C73EA03A191B18030053FD16 /* MacBook_005.png in Resources */ = {isa = PBXBuildFile; fileRef = C73EA039191B18030053FD16 /* MacBook_005.png */; };
+		C73EA03C191B29950053FD16 /* no_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C73EA03B191B29950053FD16 /* no_image.jpg */; };
 		C75982A819178CE70053AD9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75982A719178CE70053AD9B /* Foundation.framework */; };
 		C75982AA19178CE70053AD9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75982A919178CE70053AD9B /* CoreGraphics.framework */; };
 		C75982AC19178CE70053AD9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75982AB19178CE70053AD9B /* UIKit.framework */; };
 		C75982B219178CE70053AD9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C75982B019178CE70053AD9B /* InfoPlist.strings */; };
 		C75982B419178CE70053AD9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C75982B319178CE70053AD9B /* main.m */; };
 		C75982B819178CE70053AD9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C75982B719178CE70053AD9B /* AppDelegate.m */; };
-		C75982BB19178CE70053AD9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75982B919178CE70053AD9B /* Main.storyboard */; };
 		C75982BE19178CE80053AD9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75982BD19178CE80053AD9B /* ViewController.m */; };
 		C75982C019178CE80053AD9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75982BF19178CE80053AD9B /* Images.xcassets */; };
 		C75982C719178CE80053AD9B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75982C619178CE80053AD9B /* XCTest.framework */; };
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C7395B5C191A1D1E006AAB03 /* komosama_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = komosama_header.png; sourceTree = "<group>"; };
+		C7395B5D191A1D1E006AAB03 /* komosama_headertag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = komosama_headertag.png; sourceTree = "<group>"; };
+		C7395B60191A1DAA006AAB03 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		C7395B62191A1E5C006AAB03 /* komosama_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = komosama_bg.png; sourceTree = "<group>"; };
+		C7395B64191A1EA8006AAB03 /* komosama_slidebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = komosama_slidebg.png; sourceTree = "<group>"; };
+		C73EA039191B18030053FD16 /* MacBook_005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacBook_005.png; sourceTree = "<group>"; };
+		C73EA03B191B29950053FD16 /* no_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_image.jpg; sourceTree = "<group>"; };
 		C75982A419178CE70053AD9B /* happykomosama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happykomosama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75982A719178CE70053AD9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C75982A919178CE70053AD9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,7 +58,6 @@
 		C75982B519178CE70053AD9B /* happykomosama-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "happykomosama-Prefix.pch"; sourceTree = "<group>"; };
 		C75982B619178CE70053AD9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C75982B719178CE70053AD9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C75982BA19178CE70053AD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C75982BC19178CE70053AD9B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C75982BD19178CE80053AD9B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C75982BF19178CE80053AD9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -82,6 +94,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7395B5B191A1D13006AAB03 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				C73EA03B191B29950053FD16 /* no_image.jpg */,
+				C7395B62191A1E5C006AAB03 /* komosama_bg.png */,
+				C7395B5C191A1D1E006AAB03 /* komosama_header.png */,
+				C7395B5D191A1D1E006AAB03 /* komosama_headertag.png */,
+				C7395B64191A1EA8006AAB03 /* komosama_slidebg.png */,
+				C73EA039191B18030053FD16 /* MacBook_005.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		C759829B19178CE70053AD9B = {
 			isa = PBXGroup;
 			children = (
@@ -116,9 +141,10 @@
 		C75982AD19178CE70053AD9B /* happykomosama */ = {
 			isa = PBXGroup;
 			children = (
+				C7395B5B191A1D13006AAB03 /* image */,
 				C75982B619178CE70053AD9B /* AppDelegate.h */,
 				C75982B719178CE70053AD9B /* AppDelegate.m */,
-				C75982B919178CE70053AD9B /* Main.storyboard */,
+				C7395B60191A1DAA006AAB03 /* Storyboard.storyboard */,
 				C75982BC19178CE70053AD9B /* ViewController.h */,
 				C75982BD19178CE80053AD9B /* ViewController.m */,
 				C75982BF19178CE80053AD9B /* Images.xcassets */,
@@ -203,6 +229,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "ohta tomotaka";
 				TargetAttributes = {
+					C75982A319178CE70053AD9B = {
+						DevelopmentTeam = XN6SDZBGFY;
+					};
 					C75982C419178CE80053AD9B = {
 						TestTargetID = C75982A319178CE70053AD9B;
 					};
@@ -232,9 +261,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7395B65191A1EA8006AAB03 /* komosama_slidebg.png in Resources */,
+				C7395B63191A1E5C006AAB03 /* komosama_bg.png in Resources */,
+				C73EA03A191B18030053FD16 /* MacBook_005.png in Resources */,
 				C75982C019178CE80053AD9B /* Images.xcassets in Resources */,
+				C7395B5F191A1D1E006AAB03 /* komosama_headertag.png in Resources */,
 				C75982B219178CE70053AD9B /* InfoPlist.strings in Resources */,
-				C75982BB19178CE70053AD9B /* Main.storyboard in Resources */,
+				C73EA03C191B29950053FD16 /* no_image.jpg in Resources */,
+				C7395B5E191A1D1E006AAB03 /* komosama_header.png in Resources */,
+				C7395B61191A1DAA006AAB03 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +319,6 @@
 				C75982B119178CE70053AD9B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C75982B919178CE70053AD9B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C75982BA19178CE70053AD9B /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		C75982CF19178CE80053AD9B /* InfoPlist.strings */ = {
@@ -380,10 +407,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "happykomosama/happykomosama-Prefix.pch";
 				INFOPLIST_FILE = "happykomosama/happykomosama-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,10 +425,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "happykomosama/happykomosama-Prefix.pch";
 				INFOPLIST_FILE = "happykomosama/happykomosama-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
