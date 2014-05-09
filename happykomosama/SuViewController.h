@@ -13,5 +13,9 @@
     IBOutlet UILabel *namelabel;
     IBOutlet UILabel *grouplabel;
 }
-
+@property NSString* imagepath;
+@property NSString* snamelabel;
+@property NSString* sgrouplabel;
+@property NSString* voicepath;
+-(IBAction)select;
 @end

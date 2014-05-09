@@ -71,45 +71,8 @@
 //    }
 //    select=indexPath.row;
 //}
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    [receivedData appendData:data];
-}
 
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"voice%d.mp3",select];
-    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:fileName];
-    
-    
-//    NSString *soundFilePath =
-//    [[NSBundle mainBundle] pathForResource: @"whistle1"
-//                                    ofType: @"mp3"];
-    
 
-    
-    [receivedData writeToFile:filePath atomically:YES];
-    //[connection release];
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    NSLog(@"Succeeded! Received %d bytes of data",[receivedData length]);
-    [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(sample:) userInfo:nil repeats:NO];
-    
-
-}
-- (IBAction)sample:(id)sender {
-    NSLog(@"play sound");
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"voice%d.mp3",select];
-    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:fileName];
-    SystemSoundID sound;
-    //NSString *path = [[NSBundle mainBundle] pathForResource:@"answer3" ofType:@"mp3"];
-    NSURL *url = [NSURL fileURLWithPath:filePath];
-    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound);
-    
-    // サウンドの再生
-    AudioServicesPlaySystemSound(sound);
-}
 -(NSString*)url:(int)row{
     int i = row;
     NSDictionary *jsonDic1 = [array objectAtIndex:i];
@@ -137,6 +100,16 @@
     if ( [name isEqual:[NSNull null]] ){
         NSLog(@"name空です");
         name=@"名前無しさん";
+    }
+    return name;
+}
+-(NSString*)group:(int)row{
+    int i = row;
+    NSDictionary *jsonDic1 = [array objectAtIndex:i];
+    NSString *name = [jsonDic1 objectForKey:@"organization"];
+    if ( [name isEqual:[NSNull null]] ){
+        NSLog(@"name空です");
+        name=@"";
     }
     return name;
 }
@@ -188,22 +161,27 @@
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath  {
     SuViewController *ViewController2 = [self.storyboard instantiateViewControllerWithIdentifier:@"sub"];
+    ViewController2.imagepath=[self imagepath:indexPath.row];
+    ViewController2.snamelabel=[self name:indexPath.row];
+    ViewController2.sgrouplabel=[self group:indexPath.row];
+    ViewController2.voicepath=[self url:indexPath.row];
     [self presentViewController:ViewController2 animated:YES completion:nil];
     
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSLog(@"select %d",indexPath.row);
-    int sec = indexPath.row;
-    NSURL *theURL = [NSURL URLWithString:[self url:sec]];
-    //http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4
-    NSURLRequest *theRequest=[NSURLRequest requestWithURL:theURL];
-    NSURLConnection *theConnection=[[NSURLConnection alloc]
-                                    initWithRequest:theRequest delegate:self];
-    if (theConnection) {
-        NSLog(@"start loading");
-        receivedData = [NSMutableData data];
-    }
-    select=indexPath.row;
+//    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+//    NSLog(@"select %d",indexPath.row);
+//    int sec = indexPath.row;
+//    NSURL *theURL = [NSURL URLWithString:[self url:sec]];
+//    //http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4
+//    NSURLRequest *theRequest=[NSURLRequest requestWithURL:theURL];
+//    NSURLConnection *theConnection=[[NSURLConnection alloc]
+//                                    initWithRequest:theRequest delegate:self];
+//    if (theConnection) {
+//        NSLog(@"start loading");
+//        receivedData = [NSMutableData data];
+//    }
+//    select=indexPath.row;
 
 
 }
+
 @end

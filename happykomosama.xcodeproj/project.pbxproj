@@ -47,6 +47,7 @@
 		C75982D119178CE80053AD9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C75982CF19178CE80053AD9B /* InfoPlist.strings */; };
 		C75982D319178CE80053AD9B /* happykomosamaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C75982D219178CE80053AD9B /* happykomosamaTests.m */; };
 		C75982DD1917999B0053AD9B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75982DC1917999B0053AD9B /* AVFoundation.framework */; };
+		C7CDDBB7191CFF2100BE0D7F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7CDDBB6191CFF2100BE0D7F /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		C75982D019178CE80053AD9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C75982D219178CE80053AD9B /* happykomosamaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = happykomosamaTests.m; sourceTree = "<group>"; };
 		C75982DC1917999B0053AD9B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C7CDDBB6191CFF2100BE0D7F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		C7395B5B191A1D13006AAB03 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				C7CDDBB6191CFF2100BE0D7F /* Icon@2x.png */,
 				C70CB6CC191BD0D900BC546E /* komosama_callicon.png */,
 				C70CB6CD191BD0D900BC546E /* komosama_slide_photo.png */,
 				C73EA03B191B29950053FD16 /* no_image.jpg */,
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7395B65191A1EA8006AAB03 /* komosama_slidebg.png in Resources */,
+				C7CDDBB7191CFF2100BE0D7F /* Icon@2x.png in Resources */,
 				C7395B63191A1E5C006AAB03 /* komosama_bg.png in Resources */,
 				C73EA03A191B18030053FD16 /* MacBook_005.png in Resources */,
 				C75982C019178CE80053AD9B /* Images.xcassets in Resources */,
@@ -521,7 +525,7 @@
 		C75982D719178CE80053AD9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -539,7 +543,7 @@
 		C75982D819178CE80053AD9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

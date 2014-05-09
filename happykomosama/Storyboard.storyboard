@@ -135,6 +135,9 @@
                                 <state key="normal" image="komosama_callicon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="select" destination="9Cw-7U-xA0" eventType="touchUpInside" id="3wC-6Z-rQa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
