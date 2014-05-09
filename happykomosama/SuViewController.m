@@ -8,6 +8,7 @@
 #import "UIImageView+WebCache.h"
 #import "SuViewController.h"
 #include <AVFoundation/AVFoundation.h>
+#import "SVProgressHUD.h"
 @interface SuViewController ()
 @end
 
@@ -47,8 +48,7 @@
         NSLog(@"start loading");
         receivedData = [NSMutableData data];
     }
-
-    
+    [SVProgressHUD show];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -101,6 +101,7 @@
     //[connection release];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     NSLog(@"Succeeded! Received %d bytes of data",[receivedData length]);
+    [SVProgressHUD dismiss];
 }
 
 @end

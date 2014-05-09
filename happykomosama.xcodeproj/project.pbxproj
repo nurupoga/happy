@@ -48,6 +48,8 @@
 		C75982D319178CE80053AD9B /* happykomosamaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C75982D219178CE80053AD9B /* happykomosamaTests.m */; };
 		C75982DD1917999B0053AD9B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75982DC1917999B0053AD9B /* AVFoundation.framework */; };
 		C7CDDBB7191CFF2100BE0D7F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7CDDBB6191CFF2100BE0D7F /* Icon@2x.png */; };
+		C7CDDBBB191D13D300BE0D7F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C7CDDBB8191D13D300BE0D7F /* SVProgressHUD.bundle */; };
+		C7CDDBBC191D13D300BE0D7F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CDDBBA191D13D300BE0D7F /* SVProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,9 @@
 		C75982D219178CE80053AD9B /* happykomosamaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = happykomosamaTests.m; sourceTree = "<group>"; };
 		C75982DC1917999B0053AD9B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C7CDDBB6191CFF2100BE0D7F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		C7CDDBB8191D13D300BE0D7F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		C7CDDBB9191D13D300BE0D7F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		C7CDDBBA191D13D300BE0D7F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +262,9 @@
 		C75982AE19178CE70053AD9B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7CDDBB8191D13D300BE0D7F /* SVProgressHUD.bundle */,
+				C7CDDBB9191D13D300BE0D7F /* SVProgressHUD.h */,
+				C7CDDBBA191D13D300BE0D7F /* SVProgressHUD.m */,
 				C70CB6A0191BC7FB00BC546E /* SDWebImage */,
 				C75982AF19178CE70053AD9B /* happykomosama-Info.plist */,
 				C75982B019178CE70053AD9B /* InfoPlist.strings */,
@@ -371,6 +379,7 @@
 				C7395B5F191A1D1E006AAB03 /* komosama_headertag.png in Resources */,
 				C75982B219178CE70053AD9B /* InfoPlist.strings in Resources */,
 				C73EA03C191B29950053FD16 /* no_image.jpg in Resources */,
+				C7CDDBBB191D13D300BE0D7F /* SVProgressHUD.bundle in Resources */,
 				C70CB6CF191BD0D900BC546E /* komosama_slide_photo.png in Resources */,
 				C7395B5E191A1D1E006AAB03 /* komosama_header.png in Resources */,
 				C70CB6CE191BD0D900BC546E /* komosama_callicon.png in Resources */,
@@ -400,6 +409,7 @@
 				C70CB6CA191BC7FB00BC546E /* UIImage+WebP.m in Sources */,
 				C70CB6CB191BC7FB00BC546E /* UIImageView+WebCache.m in Sources */,
 				C70CB6C0191BC7FB00BC546E /* SDImageCache.m in Sources */,
+				C7CDDBBC191D13D300BE0D7F /* SVProgressHUD.m in Sources */,
 				C75982BE19178CE80053AD9B /* ViewController.m in Sources */,
 				C70CB6BE191BC7FB00BC546E /* MKAnnotationView+WebCache.m in Sources */,
 				C70CB6C2191BC7FB00BC546E /* SDWebImageDecoder.m in Sources */,
