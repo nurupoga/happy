@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8017F68E-4696-4D6F-956B-036E43965670</string>
+	<string>2A90AC07-5983-4248-90B8-4AD5F20BF711</string>
 	<key>IDESourceControlProjectName</key>
 	<string>happykomosama</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -19,7 +19,7 @@
 	<dict>
 		<key>82690241-B9AA-4809-A9C3-4E08D3F4B13D</key>
 		<string>../..</string>
-		<key>D04959BE-13D5-4EC8-B019-85B3480129D4</key>
+		<key>9A3484DF-1306-4166-84A5-1D4B06096D09</key>
 		<string>../../happykomosama/Vendors/libwebp</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -42,7 +42,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D04959BE-13D5-4EC8-B019-85B3480129D4</string>
+			<string>9A3484DF-1306-4166-84A5-1D4B06096D09</string>
 			<key>IDESourceControlWCCName</key>
 			<string>libwebp</string>
 		</dict>

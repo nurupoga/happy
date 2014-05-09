@@ -77,7 +77,7 @@
     NSLog(@"play sound");
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"voice.wav"];
+    NSString *fileName = [NSString stringWithFormat:@"voice.mp3"];
     NSString *filePath = [documentsDirectory stringByAppendingPathComponent:fileName];
     SystemSoundID sound;
     //NSString *path = [[NSBundle mainBundle] pathForResource:@"answer3" ofType:@"mp3"];
@@ -94,7 +94,7 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"voice.wav"];
+    NSString *fileName = [NSString stringWithFormat:@"voice.mp3"];
     NSString *filePath = [documentsDirectory stringByAppendingPathComponent:fileName];
     
     [receivedData writeToFile:filePath atomically:YES];

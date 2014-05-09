@@ -165,7 +165,8 @@
     ViewController2.snamelabel=[self name:indexPath.row];
     ViewController2.sgrouplabel=[self group:indexPath.row];
     ViewController2.voicepath=[self url:indexPath.row];
-    [self presentViewController:ViewController2 animated:YES completion:nil];
+     [self.navigationController pushViewController:ViewController2 animated:YES];
+    //[self presentViewController:ViewController2 animated:YES completion:nil];
     
 //    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 //    NSLog(@"select %d",indexPath.row);
